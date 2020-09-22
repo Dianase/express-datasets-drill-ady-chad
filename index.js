@@ -22,7 +22,7 @@ function validateBearerToken(req, res, next) {
   next();
 }
 
-app.get('/movies', (req, res) => {
+app.get('/movie', (req, res) => {
   let response = MOVIES;
   let {genre, country, avg_vote} = req.query
   if(genre) {
